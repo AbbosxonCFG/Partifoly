@@ -1,0 +1,43 @@
+from django.urls import path
+from .views import *
+
+
+urlpatterns=[
+    path('',category,name='category'),
+    path('category_add',category_add,name='category_add'),
+    path('category_delete/<int:pk>/',category_delete,name='category_delete'),
+    path('banner/',banner,name='banner'),
+    path('banner_add/',banner_add,name='banner_add'),
+    path('banner_update/<int:pk>/',banner_update,name='banner_update'),
+    path('banner_delete/<int:pk>/',banner_delete,name='banner_delete'),
+    path('book/',book,name='book'),
+    path('book_add/',book_add,name='book_add'),
+    path('book_update/<int:pk>/',book_update,name='book_update'),
+    path('book_delete/<int:pk>/',book_delete,name='book_delete'),
+    path('course/',course,name='course'),
+    path('course_detail/<int:pk>/',course_detail,name='course_detail'),
+    path('course_add',course_add,name='course_add'),
+    path('course_update/<int:pk>/',course_update,name='course_update'),
+    path('course_delete/<int:pk>/',course_delete,name='course_delete'),
+    path('courseplaylist/',courseplaylist,name='courseplaylist'),
+    path('courseplaylist_detail/<int:pk>/',courseplaylist_detail,name='courseplaylist_detail'),
+    path('courseplaylist_add',courseplaylist_add,name='courseplaylist_add'),
+    path('courseplaylist_update/<int:pk>/',courseplaylist_update,name='courseplaylist_update'),
+    path('courseplaylist_delete/<int:pk>/',courseplaylist_delete,name='courseplaylist_delete'),
+    path('review/',review,name='review'),
+    path('review_add/',review_add,name='review_add'),
+    path('review_update/<int:pk>/',review_update,name='review_update'),
+    path('review_delete/<int:pk>/',review_delete,name='review_delete'),
+    path('mentor/',mentor,name='mentor'),
+    path('mentor_detail/<int:pk>/',mentor_detail,name='mentor_detail'),
+    path('mentor_add/',mentor_add,name='mentor_add'),
+    path('mentor_update/<int:pk>/',mentor_update,name='mentor_update'),
+    path('mentor_delete/<int:pk>/',mentor_delete,name='mentor_delete'),
+    path('payment/',payment,name='payment'),
+    path('payment_detail/<int:pk>/',payment_detail,name='payment_detail'),
+    path('payment_add/',payment_add,name='payment_add'),
+    path('payment_update/<int:pk>/',payment_update,name='payment_update'),
+    path('payment_delete/<int:pk>/',payment_delete,name='payment_delete'),
+    path('cart/',cart,name='cart'),
+    path('cart/<int:pk>/',cart_delete,name='cart_delete')
+]
